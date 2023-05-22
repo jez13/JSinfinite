@@ -1,0 +1,39 @@
+const infinite = function() {
+  console.log("Welcome to JSinfinite!")
+};
+infinite.sleep = function(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+infinite.version = "0.0.4 PRE-ALPHA"
+infinite.logversion = function(advanced) {
+  if (advanced) {
+    console.error("infinite advanced logversion indev, printing normal logversion ...");
+    console.log(infinite.version);
+  } else {console.log(infinite.version)
+  }
+};
+infinite.printid = function(id) {
+  print(document.getElementById(id))
+}
+}
+infinite.smartconsole = function() {
+  let infcnsle = document.createElement("button");
+  infcnsle.id = "infcsle";
+  infcnsle.innerHTML = 'Infinite Console';
+  document.body.appendChild(infcnsle);
+  infcnsle.onclick = function() {
+    eval(prompt('Infinite Smart Console'));
+  };
+}
+infinite.loghelp = function() {
+  console.log("Infinite version "+infinite.version+" help.")
+  console.log("-- infinite.sleep(milliseconds) pauses the entire script for (milliseconds parameter) milliseconds.")
+  console.log("-- infinite.smartconsole() creates a button in the html project(body requires 'body' id also)")
+  console.log("-- [BUGGED] infinite.printid(id) tries to use the web brower's print feature on a specific id(put id in id parameter)")
+  console.log("-- [ADVANCED MOD IN-DEV] infinite.logversion(advanced: boolean) basically prints out in the console version of JS infinite, advanced parameter specifies should it print out advanced mode.")
+  console.log("That's all! (For now atleast.)")
+}
