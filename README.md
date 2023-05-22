@@ -1,4 +1,4 @@
-# <img src="JSinfinite_logo.jpg" alt="JSinfinite" width="64" height="64"></img> JSinfinite 
+# <img src="JSinfinite_logo.jpg" alt="JSinfinite" width="32" height="32"></img> JSinfinite 
 ## About
 Welcome to JSinfinite, a JavaScript tool!
 With JSinfinite you can do a lot of things!
